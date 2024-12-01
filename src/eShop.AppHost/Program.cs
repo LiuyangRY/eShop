@@ -4,7 +4,11 @@ var builder = DistributedApplication.CreateBuilder(args);
 
 builder.AddForwardedHeaders();
 
-var redis = builder.AddRedis("redis");
+var redis = builder.AddRedis("redis")
+    .WithImage("redis")
+    .WithImageTag("latest")
+    .WithRedisInsight()
+    .WithLifetime(ContainerLifetime.Persistent);
 var rabbitMq = builder.AddRabbitMQ("eventbus")
     .WithLifetime(ContainerLifetime.Persistent);
 var postgres = builder.AddPostgres("postgres")
