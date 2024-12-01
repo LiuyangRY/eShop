@@ -3,7 +3,7 @@ using CommunityToolkit.Maui.Converters;
 
 namespace eShop.ClientApp.Converters;
 
-public class DoubleConverter : BaseConverter<double, string>
+public partial class DoubleConverter : BaseConverter<double, string>
 {
     public override string DefaultConvertReturnValue { get; set; } = string.Empty;
     public override double DefaultConvertBackReturnValue { get; set; } = 0d;

@@ -10,7 +10,7 @@ using BasketItem = eShop.ClientApp.Models.Basket.BasketItem;
 
 namespace eShop.ClientApp.Services.Basket;
 
-public class BasketService : IBasketService, IDisposable
+public sealed partial class BasketService : IBasketService, IDisposable
 {
     private readonly IFixUriService _fixUriService;
     private readonly IIdentityService _identityService;
@@ -136,7 +136,7 @@ public class BasketService : IBasketService, IDisposable
         return headers;
     }
 
-    protected virtual void Dispose(bool disposing)
+    private void Dispose(bool disposing)
     {
         if (disposing)
         {

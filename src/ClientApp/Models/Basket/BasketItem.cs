@@ -1,6 +1,6 @@
 ﻿namespace eShop.ClientApp.Models.Basket;
 
-public class BasketItem : BindableObject
+public partial class BasketItem : BindableObject
 {
     private int _quantity;
 

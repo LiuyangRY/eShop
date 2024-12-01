@@ -3,7 +3,7 @@
 namespace eShop.ClientApp.Views;
 
 [ContentProperty(nameof(Content))]
-public class BadgeView : Grid
+public partial class BadgeView : Grid
 {
     public static BindableProperty ContentProperty =
         BindableProperty.Create(nameof(Content), typeof(View), typeof(BadgeView),

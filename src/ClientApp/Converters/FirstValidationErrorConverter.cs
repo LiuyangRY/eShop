@@ -3,7 +3,7 @@ using CommunityToolkit.Maui.Converters;
 
 namespace eShop.ClientApp.Converters;
 
-public class FirstValidationErrorConverter : BaseConverterOneWay<IEnumerable<string>, string>
+public partial class FirstValidationErrorConverter : BaseConverterOneWay<IEnumerable<string>, string>
 {
     public override string DefaultConvertReturnValue { get; set; } = string.Empty;
 

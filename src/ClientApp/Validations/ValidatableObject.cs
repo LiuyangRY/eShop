@@ -1,6 +1,6 @@
 ﻿namespace eShop.ClientApp.Validations;
 
-public class ValidatableObject<T> : ObservableObject, IValidity
+public partial class ValidatableObject<T> : ObservableObject, IValidity
 {
     private IEnumerable<string> _errors;
     private bool _isValid;

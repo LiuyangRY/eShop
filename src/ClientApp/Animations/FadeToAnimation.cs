@@ -3,7 +3,7 @@ using eShop.ClientApp.Helpers;
 
 namespace eShop.ClientApp.Animations;
 
-public class FadeToAnimation : AnimationBase
+public partial class FadeToAnimation : AnimationBase
 {
     public static readonly BindableProperty OpacityProperty =
         BindableProperty.Create(nameof(Opacity), typeof(double), typeof(FadeToAnimation), 0.0d,

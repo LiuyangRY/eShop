@@ -3,7 +3,7 @@ using CommunityToolkit.Maui.Converters;
 
 namespace eShop.ClientApp.Converters;
 
-public class DoesNotHaveCountConverter : BaseConverterOneWay<int, bool>
+public partial class DoesNotHaveCountConverter : BaseConverterOneWay<int, bool>
 {
     public override bool DefaultConvertReturnValue { get; set; } = false;
 
